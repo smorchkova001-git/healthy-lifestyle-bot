@@ -474,7 +474,7 @@ async def pie_chart(message: types.Message):
     buf.seek(0)
     plt.close()
 
-    caption = f"Вода: {water_drunk}/{water_goal} мл\nКалории: {calories_eaten}/{calorie_goal} ккал"
+    caption = f"Вода: {water_drunk}/{water_goal} мл\nКалории: {cal_diff}/{calorie_goal} ккал"
     
     photo = BufferedInputFile(buf.getvalue(), filename="graph.png")
     
